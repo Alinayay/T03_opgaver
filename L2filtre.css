@@ -1,0 +1,66 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+#img2:hover {
+  filter: none;
+}
+#img3:hover {
+  filter: none;
+}
+#img4:hover {
+  filter: none;
+}
+#img5:hover {
+  filter: none;
+}
+#img6:hover {
+  filter: none;
+}
+#img7:hover {
+  filter: none;
+}
+#img8:hover {
+  filter: none;
+}
+#img9:hover {
+  filter: none;
+}
+#img10:hover {
+  filter: none;
+}
+#img11:hover {
+  filter: none;
+}
+#img2 {
+  filter: grayscale(100%);
+}
+#img3 {
+  filter: blur(10px);
+}
+#img4 {
+  filter: invert(100%);
+}
+#img5 {
+  filter: hue-rotate(100deg);
+}
+#img6 {
+  filter: brightness(200%);
+}
+#img7 {
+  filter: contrast(20);
+}
+#img8 {
+  filter: sepia(50%);
+}
+#img9 {
+  filter: drop-shadow(10px 10px 4px #4444dd);
+}
+#img10 {
+  filter: saturate(300%);
+}
+#img11 {
+  filter: opacity(50%);
+}
