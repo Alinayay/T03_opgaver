@@ -1,0 +1,39 @@
+body {
+  width: auto;
+  height: auto;
+}
+main {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+img {
+  display: block;
+}
+#img1 {
+  transform: rotate(180deg);
+}
+#img2 {
+  transform: scale(0.2) rotate(40deg);
+  transform-origin: 0 100%;
+}
+#img3 {
+  transform: scale(0.6) rotate(90deg);
+  transform-origin: 100% 0;
+}
+#img4 {
+  width: 100%;
+  transform: translateX(calc(100% + 3px));
+}
+.moved_img {
+  width: 40%;
+  border: 3px solid rgb(118, 124, 212);
+}
+p {
+  transform: rotate(20deg) skew(20deg);
+  background-color: rgb(67, 141, 178);
+  height: max-content;
+  padding: 1rem 1rem;
+  text-align: center;
+}
