@@ -1,0 +1,50 @@
+body {
+  width: auto;
+  height: auto;
+}
+main {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+img {
+  display: block;
+}
+div {
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+#c1 {
+  transition: transform 2s ease;
+  filter: drop-shadow(10px 10px 4px #9ebee5);
+}
+#c1:hover {
+  transform: translate(40px, -40px);
+  filter: drop-shadow(20px 20px 8px #9ebee5);
+}
+.cirkel {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #1e3451;
+  transition: 1s ease;
+  justify-self: center;
+}
+.cirkel:hover {
+  background-color: #91acd0;
+  filter: drop-shadow(0 0 35px #e1edfc);
+}
+#c3 {
+  transition: transform 1s ease;
+}
+#c3:hover {
+  transform: rotate(90deg);
+}
+#c4 {
+  transform: scale(0.5);
+  transition: filter 2.5s ease;
+}
+#c4:hover {
+  filter: blur(3px) brightness(80%) hue-rotate(180deg);
+}

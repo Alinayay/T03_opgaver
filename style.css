@@ -1,6 +1,7 @@
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: start;
 }
 div {
   width: 300px;
