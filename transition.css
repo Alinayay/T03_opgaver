@@ -46,5 +46,5 @@ div {
   transition: filter 2.5s ease;
 }
 #c4:hover {
-  filter: blur(3px) brightness(80%) hue-rotate(180deg);
+  filter: blur(3px) brightness(70%) hue-rotate(180deg);
 }

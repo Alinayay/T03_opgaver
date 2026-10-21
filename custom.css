@@ -1,0 +1,40 @@
+:root {
+  --custom-border-radius: 12px;
+  --custom-space: 12px;
+  --custom-card-width: 250px;
+  --custom-content-width: 1100px;
+  --custom-img-ratio: 3/2;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, var(--custom-card-width)), 1fr);
+  gap: calc(var(custom-space) * 2);
+  max-width: var(--custom-content-width);
+  margin: 40px auto;
+}
+.card {
+  padding: calc(var(custom-space) * 2);
+  border: 1px solid #aaa;
+  border-radius: var(--custom-border-radius);
+}
+.card img {
+  width: 100%;
+  aspect-ratio: var(--custom-img-ratio);
+  object-fit: cover;
+  border-radius: var(--custom-border-radius);
+}
+.card h2 {
+  font-size: 1.5rem;
+  margin: calc(var(--custom-space) * 2) 0 var(--custom-space);
+}
+.card p {
+  line-height: 1.6;
+  margin-bottom: calc(var(custom-space) * 2);
+}
+.card button {
+  padding: var(--custom-space) calc(var(--custom-space) * 2);
+  border: none;
+  border-radius: var(--custom-border-radius);
+  cursor: pointer;
+}

@@ -1,0 +1,60 @@
+body {
+  width: 900px;
+  height: auto;
+}
+main {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+img {
+  display: block;
+}
+.c1 {
+  display: grid;
+  img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #c1p {
+    grid-column: 1;
+    grid-row: 1;
+    color: brown;
+    font-size: xx-large;
+  }
+}
+.c2 {
+  position: relative;
+  #c2p {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.c3 {
+  #card_box {
+    background-color: black;
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 15px;
+    width: 30%;
+    height: max-content;
+    justify-self: right;
+    transform: translate(-250px, -200px);
+    text-align: center;
+  }
+}
+.c4 {
+  position: relative;
+  #img_overlay {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
