@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <title>L2_1</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="back"> <img id="back_knap" src="assets/15847865.png" /></a>
+      <h1>L2 Øvelse 6</h1>
+    </header>
+    <main>
+      <div><p>Custom properties handler om-------------</p></div>
+      <div>
+        <code
+          >:root { <br />
+          --custom-border-radius: 12px;<br />
+          --custom-space: 12px;<br />
+          --custom-card-width: 250px;<br />
+          --custom-content-width: 1100px;<br />
+          --custom-img-ratio: 3/2;<br />
+          }<br />
+
+          .cards {<br />
+          display: grid;<br />
+          grid-template-columns: repeat(auto-fit, minmax(100%, var(--custom-card-width)), 1fr);<br />
+          gap: calc(var(custom-space) * 2);<br />
+          max-width: var(--custom-content-width);<br />
+          margin: 40px auto;<br />
+          }<br />
+          .card {<br />
+          padding: calc(var(custom-space) * 2);<br />
+          border: 1px solid #aaa;<br />
+          border-radius: var(--custom-border-radius);<br />
+          }<br />
+          .card img {<br />
+          width: 100%;<br />
+          aspect-ratio: var(--custom-img-ratio);<br />
+          object-fit: cover;<br />
+          border-radius: var(--custom-border-radius);<br />
+          }<br />
+          .card h2 {<br />
+          font-size: 1.5rem;<br />
+          margin: calc(var(--custom-space) * 2) 0 var(--custom-space);<br />
+          }<br />
+          .card p {<br />
+          line-height: 1.6;<br />
+          margin-bottom: calc(var(custom-space) * 2);<br />
+          }<br />
+          .card button {<br />
+          padding: var(--custom-space) calc(var(--custom-space) * 2);<br />
+          border: none;<br />
+          border-radius: var(--custom-border-radius);<br />
+          cursor: pointer;<br />
+          }<br />
+        </code>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
