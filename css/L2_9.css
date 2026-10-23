@@ -1,3 +1,37 @@
+main {
+  max-width: 1000px;
+  margin: 2rem auto 0rem;
+}
+section {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+h2 {
+  padding: 10px 0px;
+  text-align: center;
+}
+div:last-child {
+  padding: 10px 30px;
+  border-radius: 8px;
+  p {
+    line-height: 1.5;
+  }
+}
+div:not(:last-child) {
+  margin: 20px 3rem;
+  background-color: #a3c0b3b7;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: larger;
+  line-height: 1.5;
+}
+img:not(#back_knap) {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
 .na::before {
   content: "🌍 ";
   margin-right: 0.5rem;
@@ -13,7 +47,7 @@ h2::before {
   top: 0;
   width: 100%;
   height: 20px;
-  background-color: blue;
+  background-color: rgb(87, 122, 100);
 }
 h2::after {
   content: "";
@@ -22,19 +56,14 @@ h2::after {
   bottom: 0;
   width: 100%;
   height: 20px;
-  background-color: blue;
+  background-color: rgb(58, 82, 67);
 }
 .card {
-  --card-bg-color: hsl(197, 76%, 61%);
-  --card-text-color: hsl(240, 68%, 96%);
-  --card-edge-color: hsl(197, 76%, 38%);
-  --border-radius: 10px;
-  --general-bg-color: #222;
+  color: hsl(0, 0%, 100%);
   position: relative;
   padding: 20px;
-  border-radius: var(--border-radius);
-  background-color: var(--card-bg-color);
+  border-radius: 12px;
+  background-color: #a3c0b3b7;
   overflow: hidden;
   height: fit-content;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

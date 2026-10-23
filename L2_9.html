@@ -18,32 +18,47 @@
       <h1>L2 Øvelse 9</h1>
     </header>
     <main>
-      <div><p>Pseudoelementer er ------------</p></div>
-      <div><p>Pseudoklasser er-------------</p></div>
+      <div>
+        <p>
+          Pseudoelementer er en måde hvor man kan vælge en del af et element uden at skrive noget ekstra html, det skrives med ::, vi arbejder med ::before som laver et en frist child til det valgte element og ::after som gør det samme men det er
+          last child i stedet, cardsne her under har fået en emoji og en border ved hjælp af ::
+        </p>
+        <br />
+        <p>
+          Pseudoklasser har vi allerede mådt gennem :first-child eller :hover, Pseudoklasser lader dig vælge et element baseret på information udenfor html'en, en Pseudoklasse fx :is(), hvor man kan samle flere elementer i en main :is (h1,h2,p) en
+          anden Pseudoklasse er :has() hvor man kan vælge et element som indeholder at andet element fx div:has(img), en anden Pseudoklasse er :not() som gør at du kan vælge flere elementer bortset fra den du skriver i () fx div:not(.card)
+        </p>
+      </div>
       <section>
         <article class="card">
           <h2>Hello kitty</h2>
-          <img src="assets/Hello_kitty_character_portrait.png"/>
-          <p>Species: Cat</p>
-          <p class="na">British</p>
-          <p class="bir"> November 1st</p>
+          <img src="assets/Sanrio_Characters_Hello_Kitty_Image026.webp" />
+          <div>
+            <p>Species: Cat</p>
+            <p class="na">British</p>
+            <p class="bir">November 1st</p>
+          </div>
         </article>
         <article class="card">
           <h2>Kuromi</h2>
-          <img src="assets/List-kuromi.webp"/>
-          <p>Species: Rabbit</p>
-          <p class="na">American</p>
-          <p class="bir"> October 31st</p>
+          <img src="assets/List-kuromi.webp" />
+          <div>
+            <p>Species: Rabbit</p>
+            <p class="na">American</p>
+            <p class="bir">October 31st</p>
+          </div>
         </article>
         <article class="card">
           <h2>Pompompurin</h2>
-          <img src="assets/Sanrio_Characters_Pompompurin_Image006.webp"/>
-          <p>Species: Dog</p>
-          <p class="na">Japanese</p>
-          <p class="bir"> April 16th</p>
+          <img src="assets/Sanrio_Characters_Pompompurin_Image006.webp" />
+          <div>
+            <p>Species: Dog</p>
+            <p class="na">Japanese</p>
+            <p class="bir">April 16th</p>
+          </div>
         </article>
-      </div></section>
+      </section>
     </main>
-      <footer><p id="fp">© Alina Hussain ☆*o(≧▽≦)o*☆ alhu1002@stud.ek.dk</p></footer>
+    <footer><p id="fp">© Alina Hussain ☆*o(≧▽≦)o*☆ alhu1002@stud.ek.dk</p></footer>
   </body>
 </html>
