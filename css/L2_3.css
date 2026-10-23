@@ -1,18 +1,22 @@
-body {
-  width: auto;
-  height: auto;
-}
-main {
+section {
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 1rem;
+}
+main {
+  max-width: 1000px;
+  margin: 2rem auto 3rem;
+}
+div {
+  max-height: 440px;
 }
 img {
   display: block;
 }
 #img1 {
   transform: rotate(180deg);
+  padding: 50px;
 }
 #img2 {
   transform: scale(0.2) rotate(40deg);
@@ -21,6 +25,7 @@ img {
 #img3 {
   transform: scale(0.6) rotate(90deg);
   transform-origin: 100% 0;
+  padding: 50px;
 }
 #img4 {
   width: 100%;
@@ -30,7 +35,7 @@ img {
   width: 40%;
   border: 3px solid rgb(118, 124, 212);
 }
-p {
+#c4 {
   transform: rotate(20deg) skew(20deg);
   background-color: rgb(67, 141, 178);
   height: max-content;

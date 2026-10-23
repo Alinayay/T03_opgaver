@@ -1,0 +1,18 @@
+main {
+  max-width: 1000px;
+  margin: 2rem auto 0rem;
+}
+section {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+div {
+  margin: 20px 3rem;
+  background-color: #a3c0b3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: larger;
+  line-height: 1.5;
+}

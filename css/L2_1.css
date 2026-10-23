@@ -1,7 +1,12 @@
-main {
+section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
+  gap: 2rem;
+}
+main {
+  max-width: 1200px;
+  margin: 2rem auto 3rem;
 }
 div {
   width: 300px;
