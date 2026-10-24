@@ -6,7 +6,7 @@
 img {
   display: block;
 }
-p {
+p:not(#fp, #c2p, #card_box, #c1p) {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
   line-height: 1.3;

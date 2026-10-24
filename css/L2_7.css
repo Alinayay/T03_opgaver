@@ -1,15 +1,16 @@
-body {
-  width: 900px;
-  height: auto;
-}
-main {
+section {
   max-width: 900px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
+main {
+  max-width: 1200px;
+  align-self: center;
+}
 img {
   display: block;
+  width: 400px;
 }
 .c1 {
   display: grid;
@@ -20,14 +21,14 @@ img {
   #c1p {
     grid-column: 1;
     grid-row: 1;
-    color: brown;
-    font-size: xx-large;
+    align-self: center;
+    text-align: center;
   }
 }
 .c2 {
   position: relative;
   #c2p {
-    font-size: 3rem;
+    font-size: 1.3rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,14 +38,13 @@ img {
 }
 .c3 {
   #card_box {
-    background-color: black;
-    color: aliceblue;
+    background-color: #a3c0b3b7;
     font-size: 1rem;
-    padding: 15px;
-    width: 30%;
+    padding: 10px;
+    width: 50%;
     height: max-content;
     justify-self: right;
-    transform: translate(-250px, -200px);
+    transform: translate(-250px, -130px);
     text-align: center;
   }
 }
@@ -55,6 +55,6 @@ img {
     width: 40%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-110%, 15%);
   }
 }

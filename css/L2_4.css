@@ -15,6 +15,7 @@ div {
   width: 400px;
   height: 350px;
   aspect-ratio: 1/1;
+  margin-bottom: 3rem;
 }
 #c1 {
   transition: transform 2s ease;
